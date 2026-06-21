@@ -184,9 +184,7 @@ One challenge I encountered was reconstructing the Huffman tree correctly during
 | 4 | Weighted graph + Dijkstra | O(n²) shortest path | Shortest path correctness against manually computed alternatives, invalid-input handling |
 | 5 | Huffman coding | O(k²) tree build, O(file size) encode/decode | Compression ratio, byte-for-byte lossless restoration |
 
-## **Conclusion**
 
-This project required matching five distinct problems to the data structures and algorithms best suited to their constraints, rather than reusing a single approach throughout. The doubly linked list gave the incident tracker constant-time navigation in both directions; the balanced BST gave the procedure validator logarithmic lookup with a defensible similarity-suggestion mechanism; the adjacency matrix made directed route relationships and their dynamic updates easy to query and re-verify; Dijkstra's algorithm guaranteed an optimal route for the delivery robot even when the shortest path was not the most visually direct one; and Huffman coding compressed telemetry data while guaranteeing the original could always be perfectly restored. Across all five systems, the main recurring engineering concerns were correct pointer/index management after deletions, defending against invalid or malformed input, and explicit memory cleanup for every dynamically allocated structure — all of which were addressed and verified through targeted manual testing described above.
 
 ## **References**
 
