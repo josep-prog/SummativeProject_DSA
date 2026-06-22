@@ -25,9 +25,8 @@ int totalIncidents = 0;
 int nextIncidentID = 1;
 int liveMonitoring = 0;
 
-/* ----------------------------------- */
-/* Timestamp */
-/* ----------------------------------- */
+
+// Timestamp
 
 void makeTimestamp(char timestamp[])
 {
@@ -43,9 +42,9 @@ void makeTimestamp(char timestamp[])
     );
 }
 
-/* ----------------------------------- */
-/* Create Incident */
-/* ----------------------------------- */
+
+// Create Incident
+
 
 Incident *makeIncident(
     int id,
@@ -75,9 +74,9 @@ Incident *makeIncident(
     return newIncident;
 }
 
-/* ----------------------------------- */
-/* Remove Oldest */
-/* ----------------------------------- */
+
+// Remove Oldest
+
 
 void removeOldest()
 {
@@ -109,9 +108,9 @@ void removeOldest()
     totalIncidents--;
 }
 
-/* ----------------------------------- */
-/* Add Incident */
-/* ----------------------------------- */
+
+// Add Incident
+
 
 void addIncident(
     int id,
@@ -144,9 +143,7 @@ void addIncident(
     totalIncidents++;
 }
 
-/* ----------------------------------- */
-/* Show Current */
-/* ----------------------------------- */
+// Show Current
 
 void showCurrent()
 {
@@ -166,9 +163,8 @@ void showCurrent()
     printf("-------------------------\n");
 }
 
-/* ----------------------------------- */
-/* Navigation */
-/* ----------------------------------- */
+
+// Navigation
 
 void goForward()
 {
@@ -210,9 +206,7 @@ void goBack()
     showCurrent();
 }
 
-/* ----------------------------------- */
-/* Delete All */
-/* ----------------------------------- */
+// Delete All
 
 void clearAll()
 {
@@ -236,9 +230,7 @@ void clearAll()
     printf("All incidents deleted.\n");
 }
 
-/* ----------------------------------- */
-/* Save Session */
-/* ----------------------------------- */
+// Save Session
 
 void saveSession()
 {
@@ -276,9 +268,7 @@ void saveSession()
     printf("Session saved.\n");
 }
 
-/* ----------------------------------- */
-/* Random Incident Generator */
-/* ----------------------------------- */
+// Random Incident Generator
 
 void generateIncident()
 {
@@ -317,10 +307,6 @@ void generateIncident()
         "\n[Live] New incident recorded.\n"
     );
 }
-
-/* ----------------------------------- */
-/* Main */
-/* ----------------------------------- */
 
 int main()
 {
